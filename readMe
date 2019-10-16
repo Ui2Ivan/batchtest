@@ -1,0 +1,5 @@
+
+
+mysqld --console;
+create database oneft;
+
