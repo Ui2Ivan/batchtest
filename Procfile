@@ -1,1 +1,1 @@
-web: java -javaagent:/app/newrelic/newrelic.jar
+web: java -javaagent:/app/newrelic/newrelic.jar -jar target/u_idea2-batch-2.0.1.RELEASE.jar
