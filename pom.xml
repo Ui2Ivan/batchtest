@@ -70,7 +70,12 @@
     </dependencyManagement>
 
     <dependencies>
-
+        <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>9.4.1212.jre7</version>
+        </dependency>
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-validator</artifactId>
@@ -407,14 +412,19 @@
             </activation>
             <properties>
                 <db.encoding>UTF8</db.encoding>
-                <db.basedir>sql/mysql</db.basedir>
-                <db.url>jdbc:mysql://localhost:3306/oneft?serverTimezone=JST</db.url>
-                <db.username>mysql</db.username>
-                <db.password>mysql</db.password>
-                <db.driver>com.mysql.cj.jdbc.Driver</db.driver>
-                <db.groupId>mysql</db.groupId>
-                <db.artifactId>mysql-connector-java</db.artifactId>
-                <db.version>${mysql.version}</db.version>
+                <db.basedir>sql/postgres</db.basedir>
+                <db.url>jdbc:postgresql://ec2-54-204-35-248.compute-1.amazonaws.com:5432/d1vkn5ifbgn02i?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory</db.url>
+                <db.username>kvxbztdssymydp</db.username>
+                <db.password>2bcf505d5dae7a3e71293c89e3d182aee086548af02d34043a39226b14012735</db.password>
+<!--                <db.driver>org.postgresql.Driver</db.driver>-->
+<!--                <db.groupId>org.postgresql</db.groupId>-->
+<!--                <db.artifactId>org.postgresql</db.artifactId>-->
+<!--                <db.version>${postgresql.version}</db.version>-->
+<!--                <db.delimiterType>row</db.delimiterType>-->
+                <db.driver>org.postgresql.Driver</db.driver>
+                <db.groupId>org.postgresql</db.groupId>
+                <db.artifactId>postgresql</db.artifactId>
+                <db.version>${postgresql.version}</db.version>
                 <db.delimiterType>row</db.delimiterType>
             </properties>
         </profile>
