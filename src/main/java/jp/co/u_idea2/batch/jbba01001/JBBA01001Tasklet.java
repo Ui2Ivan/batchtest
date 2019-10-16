@@ -117,7 +117,8 @@ public class JBBA01001Tasklet implements Tasklet {
         from.setName("Ivan");
         String subject = "Hello World from the SendGrid Java Library!";
         Email to = new Email("ivan@ui2.co.jp");
-        Email cc = new Email("ivan@ui2.co.jp");
+        Email cc = new Email("fatho0@gmail.com");
+        Email bcc = new Email("fatho2@gmail.com");
         Content content = new Content("text/plain", "Hello, Email!");
         Mail mail = new Mail();
         mail.setSubject(subject);
@@ -127,7 +128,7 @@ public class JBBA01001Tasklet implements Tasklet {
         Personalization personalization = new Personalization();
         personalization.addCc(cc);
         personalization.addTo(to);
-        personalization.addBcc(to);
+        personalization.addBcc(bcc);
         mail.addPersonalization(personalization);
         SendGrid sg = new SendGrid(System.getenv("SENDGRID_API_KEY"));
         Request request = new Request();
