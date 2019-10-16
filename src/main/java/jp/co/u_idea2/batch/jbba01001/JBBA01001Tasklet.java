@@ -113,36 +113,38 @@ public class JBBA01001Tasklet implements Tasklet {
 //            contribution.setExitStatus(new ExitStatus("WARNING"));
 //            return RepeatStatus.FINISHED;
 //        }
-        Email from = new Email("ivan@ui2.co.jp");
-        from.setName("Ivan");
-        String subject = "Hello World from the SendGrid Java Library!";
-        Email to = new Email("ivan@ui2.co.jp");
-        Email cc = new Email("fatho0@gmail.com");
-        Email bcc = new Email("fatho2@gmail.com");
-        Content content = new Content("text/plain", "Hello, Email!");
-        Mail mail = new Mail();
-        mail.setSubject(subject);
-        mail.setFrom(from);
-        mail.setReplyTo(from);
-        mail.addContent(content);
-        Personalization personalization = new Personalization();
-        personalization.addCc(cc);
-        personalization.addTo(to);
-        personalization.addBcc(bcc);
-        mail.addPersonalization(personalization);
-        SendGrid sg = new SendGrid(System.getenv("SENDGRID_API_KEY"));
-        Request request = new Request();
-        try {
-            request.setMethod(Method.POST);
-            request.setEndpoint("mail/send");
-            request.setBody(mail.build());
-            Response response = sg.api(request);
-            System.out.println(response.getStatusCode());
-            System.out.println(response.getBody());
-            System.out.println(response.getHeaders());
-        } catch (IOException ex) {
-            throw ex;
-        }
+
+        sendMailTemplate();
+//        Email from = new Email("ivan@ui2.co.jp");
+//        from.setName("Ivan");
+//        String subject = "Hello World from the SendGrid Java Library!";
+//        Email to = new Email("ivan@ui2.co.jp");
+//        Email cc = new Email("fatho0@gmail.com");
+//        Email bcc = new Email("fatho2@gmail.com");
+//        Content content = new Content("text/plain", "Hello, Email!");
+//        Mail mail = new Mail();
+//        mail.setSubject(subject);
+//        mail.setFrom(from);
+//        mail.setReplyTo(from);
+//        mail.addContent(content);
+//        Personalization personalization = new Personalization();
+//        personalization.addCc(cc);
+//        personalization.addTo(to);
+//        personalization.addBcc(bcc);
+//        mail.addPersonalization(personalization);
+//        SendGrid sg = new SendGrid(System.getenv("SENDGRID_API_KEY"));
+//        Request request = new Request();
+//        try {
+//            request.setMethod(Method.POST);
+//            request.setEndpoint("mail/send");
+//            request.setBody(mail.build());
+//            Response response = sg.api(request);
+//            System.out.println(response.getStatusCode());
+//            System.out.println(response.getBody());
+//            System.out.println(response.getHeaders());
+//        } catch (IOException ex) {
+//            throw ex;
+//        }
         // フライト情報登録件数
         int insertFlightCnt = 0;
 
@@ -189,6 +191,72 @@ public class JBBA01001Tasklet implements Tasklet {
         return RepeatStatus.FINISHED;
     }
 
+    private void sendMailTemplate() throws Exception{
+        Email from = new Email("ivan@ui2.co.jp");
+        from.setName("Ivan");
+        String subject = "Hello World from the SendGrid Java Library!";
+        Email to = new Email("ivan@ui2.co.jp");
+        Email cc = new Email("fatho0@gmail.com");
+        Email bcc = new Email("fatho2@gmail.com");
+        Content content = new Content("text/plain", "Hello, Email!");
+        Mail mail = new Mail();
+        mail.setSubject(" ");
+        mail.setFrom(from);
+        mail.setReplyTo(from);
+        mail.setTemplateId("d-1dea9b705b854c9786cfafbbbdba835c");
+        mail.personalization.get(0).addSubstitution("%customername%", "User1");
+        Personalization personalization = new Personalization();
+        personalization.addCc(cc);
+        personalization.addTo(to);
+        personalization.addBcc(bcc);
+        mail.addPersonalization(personalization);
+        SendGrid sg = new SendGrid(System.getenv("SENDGRID_API_KEY"));
+        Request request = new Request();
+        try {
+            request.setMethod(Method.POST);
+            request.setEndpoint("mail/send");
+            request.setBody(mail.build());
+            Response response = sg.api(request);
+            System.out.println(response.getStatusCode());
+            System.out.println(response.getBody());
+            System.out.println(response.getHeaders());
+        } catch (IOException ex) {
+            throw ex;
+        }
+    }
+
+    private void sendMail() throws Exception{
+        Email from = new Email("ivan@ui2.co.jp");
+        from.setName("Ivan");
+        String subject = "Hello World from the SendGrid Java Library!";
+        Email to = new Email("ivan@ui2.co.jp");
+        Email cc = new Email("fatho0@gmail.com");
+        Email bcc = new Email("fatho2@gmail.com");
+        Content content = new Content("text/plain", "Hello, Email!");
+        Mail mail = new Mail();
+        mail.setSubject(subject);
+        mail.setFrom(from);
+        mail.setReplyTo(from);
+        mail.addContent(content);
+        Personalization personalization = new Personalization();
+        personalization.addCc(cc);
+        personalization.addTo(to);
+        personalization.addBcc(bcc);
+        mail.addPersonalization(personalization);
+        SendGrid sg = new SendGrid(System.getenv("SENDGRID_API_KEY"));
+        Request request = new Request();
+        try {
+            request.setMethod(Method.POST);
+            request.setEndpoint("mail/send");
+            request.setBody(mail.build());
+            Response response = sg.api(request);
+            System.out.println(response.getStatusCode());
+            System.out.println(response.getBody());
+            System.out.println(response.getHeaders());
+        } catch (IOException ex) {
+            throw ex;
+        }
+    }
     /**
      * 登録（入力チェック）処理
      * 
