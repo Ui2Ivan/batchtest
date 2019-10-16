@@ -1,4 +1,4 @@
 #!/bin/bash
 
-LIB_PATH="lib/*"
+LIB_PATH="/app/lib/*"
 CLASSPATH="${LIB_PATH}"
