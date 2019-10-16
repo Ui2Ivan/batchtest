@@ -1,37 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3370df54-a5c4-45f4-838c-61a751060821" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/u_idea2-batch-application.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/u_idea2-batch-application.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/dozer/dozer-configration-mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/dozer/dozer-configration-mapping.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/jobs/JBBA01001.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/jobs/JBBA01001.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/jobs/JBBA02001.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/jobs/JBBA02001.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/jobs/JBBB01001.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/jobs/JBBB01001.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/jobs/JBBB01002.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/jobs/JBBB01002.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/jobs/JBBB01003.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/jobs/JBBB01003.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/spring/async-batch-daemon.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/spring/async-batch-daemon.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/spring/job-base-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/spring/job-base-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/spring/launch-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/spring/launch-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ValidationMessages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ValidationMessages.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/batch-application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/batch-application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/schema-commit.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/schema-commit.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/schema-drop-h2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/schema-drop-h2.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/schema-drop-mysql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/schema-drop-mysql.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/schema-drop-oracle12c.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/schema-drop-oracle12c.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/schema-drop-postgresql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/schema-drop-postgresql.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/schema-h2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/schema-h2.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/schema-mysql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/schema-mysql.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/schema-oracle12c.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/schema-oracle12c.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/schema-postgresql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/schema-postgresql.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/i18n/application-messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/i18n/application-messages.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jp/co/u_idea2/batch/jbba01001/JBBA01001BatchDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jp/co/u_idea2/batch/jbba01001/JBBA01001BatchDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jp/co/u_idea2/batch/jbba02001/JBBA02001Dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jp/co/u_idea2/batch/jbba02001/JBBA02001Dao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jp/co/u_idea2/batch/jbbb01001/JBBB01001Dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jp/co/u_idea2/batch/jbbb01001/JBBB01001Dao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jp/co/u_idea2/batch/jbbb01002/JBBB01002Dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jp/co/u_idea2/batch/jbbb01002/JBBB01002Dao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jp/co/u_idea2/batch/jbbb01003/JBBB01003Dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jp/co/u_idea2/batch/jbbb01003/JBBB01003Dao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logback.xml" afterDir="false" />
-    </list>
+    <list default="true" id="3370df54-a5c4-45f4-838c-61a751060821" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +153,28 @@
       <option name="project" value="LOCAL" />
       <updated>1571215548708</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Change Structure">
+      <created>1571217219007</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1571217219007</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Change Structure">
+      <created>1571217232301</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1571217232301</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Change Structure">
+      <created>1571217239213</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1571217239213</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
