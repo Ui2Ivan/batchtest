@@ -204,11 +204,11 @@ public class JBBA01001Tasklet implements Tasklet {
         mail.setFrom(from);
         mail.setReplyTo(from);
         mail.setTemplateId("d-1dea9b705b854c9786cfafbbbdba835c");
-        mail.personalization.get(0).addSubstitution("%customername%", "User1");
         Personalization personalization = new Personalization();
         personalization.addCc(cc);
         personalization.addTo(to);
         personalization.addBcc(bcc);
+        personalization.addSubstitution("%customername%", "User1");
         mail.addPersonalization(personalization);
         SendGrid sg = new SendGrid(System.getenv("SENDGRID_API_KEY"));
         Request request = new Request();
