@@ -7,6 +7,7 @@ import java.nio.file.Paths;
 
 import javax.inject.Inject;
 
+import com.sendgrid.SendGrid;
 import jp.co.u_idea2.batch.common.exception.U_idea2BatchException;
 import jp.co.u_idea2.batch.common.logging.LogMessages;
 import jp.co.u_idea2.batch.common.util.DateUtil;
@@ -30,6 +31,13 @@ import org.springframework.stereotype.Component;
 import org.springframework.validation.BindException;
 import org.springframework.validation.FieldError;
 
+import com.sendgrid.Method;
+import com.sendgrid.Request;
+import com.sendgrid.Response;
+import com.sendgrid.helpers.mail.Mail;
+import com.sendgrid.helpers.mail.objects.Content;
+import com.sendgrid.helpers.mail.objects.Email;
+import com.sendgrid.helpers.mail.objects.Personalization;
 /**
  * フライト情報更新ファイルを読込み、フライト情報を更新する。
  * 
@@ -95,29 +103,51 @@ public class JBBA01001Tasklet implements Tasklet {
     @Override
     public RepeatStatus execute(StepContribution contribution, ChunkContext chunkContext) throws Exception {
         // 入出力ファイルのパスを取得
-        Path inputFile = Paths.get(userDir, PATH_FLIGHT_UPDATE);
-        Path outputFile = Paths.get(userDir, PATH_RENAME_FLIGHT_UPDATE);
+//        Path inputFile = Paths.get(userDir, PATH_FLIGHT_UPDATE);
+//        Path outputFile = Paths.get(userDir, PATH_RENAME_FLIGHT_UPDATE);
 
         // フライト情報更新ファイルの存在チェックを実施する。
-        if (!Files.exists(inputFile)) {
-            // 更新ファイルの取得失敗（10:警告終了）
-            LOGGER.warn(LogMessages.W_AR_BA01_L8001.getMessage(inputFile.toString()));
-            contribution.setExitStatus(new ExitStatus("WARNING"));
-            return RepeatStatus.FINISHED;
+//        if (!Files.exists(inputFile)) {
+//            // 更新ファイルの取得失敗（10:警告終了）
+//            LOGGER.warn(LogMessages.W_AR_BA01_L8001.getMessage(inputFile.toString()));
+//            contribution.setExitStatus(new ExitStatus("WARNING"));
+//            return RepeatStatus.FINISHED;
+//        }
+        Email from = new Email("ivan@ui2.co.jp");
+        String subject = "Hello World from the SendGrid Java Library!";
+        Email to = new Email("ivan@ui2.co.jp");
+        Email cc = new Email("henry@ui2.co.jp");
+        Content content = new Content("text/plain", "Hello, Email!");
+        Mail mail = new Mail(from, subject, to, content);
+        Personalization personalization = new Personalization();
+        personalization.addCc(cc);
+        mail.addPersonalization(personalization);
+        SendGrid sg = new SendGrid(System.getenv("SENDGRID_API_KEY"));
+        Request request = new Request();
+        try {
+            request.setMethod(Method.POST);
+            request.setEndpoint("mail/send");
+            request.setBody(mail.build());
+            Response response = sg.api(request);
+            System.out.println(response.getStatusCode());
+            System.out.println(response.getBody());
+            System.out.println(response.getHeaders());
+        } catch (IOException ex) {
+            throw ex;
         }
-
         // フライト情報登録件数
         int insertFlightCnt = 0;
 
         try {
             // フライト情報更新ファイルオープン
-            flightUpdateReader.open(chunkContext.getStepContext().getStepExecution().getExecutionContext());
+//            flightUpdateReader.open(chunkContext.getStepContext().getStepExecution().getExecutionContext());
+//
+//            // 入力先ファイルをログに出力
+//            LOGGER.info(LogMessages.I_AR_common_L0004.getMessage(inputFile.toString()));
+//
+//            // 登録（入力チェック）処理
+//            insertFlightCnt = registerData(flightUpdateReader);
 
-            // 入力先ファイルをログに出力
-            LOGGER.info(LogMessages.I_AR_common_L0004.getMessage(inputFile.toString()));
-
-            // 登録（入力チェック）処理
-            insertFlightCnt = registerData(flightUpdateReader);
         } catch (ItemStreamException e) {
             // ファイルオープンエラー
             LOGGER.error(LogMessages.E_AR_common_L9006.getMessage());
@@ -135,10 +165,10 @@ public class JBBA01001Tasklet implements Tasklet {
 
         try {
             // フライト情報更新ファイルのリネーム
-            Files.move(inputFile, outputFile);
-        } catch (IOException e) {
+//            Files.move(inputFile, outputFile);
+        } catch (Exception e) {
             // ファイルリネーム失敗
-            LOGGER.error(LogMessages.E_AR_common_L9009.getMessage(inputFile.toString(), outputFile.toString()), e);
+//            LOGGER.error(LogMessages.E_AR_common_L9009.getMessage(inputFile.toString(), outputFile.toString()), e);
             throw new U_idea2BatchException(e);
         }
 
@@ -158,7 +188,7 @@ public class JBBA01001Tasklet implements Tasklet {
      * @return フライト情報登録件数
      * @throws U_idea2BatchException
      */
-    private int registerData(ItemStreamReader<FlightUpdateDto> reader) throws U_idea2BatchException {
+    /*private int registerData(ItemStreamReader<FlightUpdateDto> reader) throws U_idea2BatchException {
         // フライト情報登録件数
         int insertFlightCnt = 0;
 
@@ -216,5 +246,5 @@ public class JBBA01001Tasklet implements Tasklet {
         }
 
         return insertFlightCnt;
-    }
+    }*/
 }
