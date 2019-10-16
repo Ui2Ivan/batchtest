@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3370df54-a5c4-45f4-838c-61a751060821" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/batch-application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/batch-application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/batch-application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/batch-application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE-distribution.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE-distribution.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE.jar" afterDir="false" />
-    </list>
+    <list default="true" id="3370df54-a5c4-45f4-838c-61a751060821" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +118,21 @@
       <option name="project" value="LOCAL" />
       <updated>1571213097707</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Change Structure">
+      <created>1571213616516</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1571213616516</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Change Structure">
+      <created>1571213853408</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1571213853408</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
