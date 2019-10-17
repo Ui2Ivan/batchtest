@@ -211,9 +211,9 @@ public class JBBA01001Tasklet implements Tasklet {
         mail.setTemplateId("d-1dea9b705b854c9786cfafbbbdba835c");
         DynamicTemplatePersonalization personalization = new DynamicTemplatePersonalization();
         personalization.addTo(to);
-        personalization.addDynamicTemplateData("Sender_Name", "User1");
-        personalization.addDynamicTemplateData("customername", "User2");
-        personalization.addDynamicTemplateData("%customername%", "User3");
+        personalization.addDynamicTemplateData("customername", "User1");
+        personalization.addDynamicTemplateData("-customername-", "User2");
+        personalization.addDynamicTemplateData(":customername", "User3");
         mail.addPersonalization(personalization);
         SendGrid sg = new SendGrid(System.getenv("SENDGRID_API_KEY"));
         Request request = new Request();
