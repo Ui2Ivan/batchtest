@@ -213,7 +213,7 @@ public class JBBA01001Tasklet implements Tasklet {
         personalization.addCc(cc);
         personalization.addTo(to);
         personalization.addBcc(bcc);
-        personalization.addDynamicTemplateData("%customername%", "User1");
+        personalization.addDynamicTemplateData("customername", "User1");
         mail.addPersonalization(personalization);
         SendGrid sg = new SendGrid(System.getenv("SENDGRID_API_KEY"));
         Request request = new Request();
