@@ -40,7 +40,6 @@ jp/co/u_idea2/batch/jbbb01002/WriteHeaderFlatFileHeaderCallback.class
 jp/co/u_idea2/batch/jbbb01001/JBBB01001Tasklet.class
 jp/co/u_idea2/batch/common/validate/FullWidth$List.class
 jp/co/u_idea2/batch/jbba02001/JBBA02001Tasklet.class
-jp/co/u_idea2/batch/jbba01001/JBBA01001Tasklet$DynamicTemplatePersonalization.class
 jp/co/u_idea2/batch/jbba02001/PassengerDto.class
 jp/co/u_idea2/batch/common/listener/JobLoggingListener.class
 jp/co/u_idea2/batch/async/db/AsyncBatchDaemon.class

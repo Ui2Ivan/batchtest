@@ -211,11 +211,10 @@ public class JBBA01001Tasklet implements Tasklet {
         mail.setTemplateId("d-1dea9b705b854c9786cfafbbbdba835c");
         Personalization personalization = new Personalization();
 
-        personalization.addSubstitution("%customername%", "Example User");
-        personalization.addTo(to);
         personalization.addDynamicTemplateData("customername", "User1");
         personalization.addDynamicTemplateData("-customername-", "User2");
         personalization.addDynamicTemplateData(":customername", "User3");
+        personalization.addTo(to);
         mail.addPersonalization(personalization);
         SendGrid sg = new SendGrid(System.getenv("SENDGRID_API_KEY"));
         Request request = new Request();
@@ -231,7 +230,7 @@ public class JBBA01001Tasklet implements Tasklet {
             throw ex;
         }
     }
-
+/*
 
     @JsonNaming(PropertyNamingStrategy.SnakeCaseStrategy.class)
     public static class DynamicTemplatePersonalization extends Personalization {
@@ -242,7 +241,7 @@ public class JBBA01001Tasklet implements Tasklet {
         public void addDynamicTemplateData(String key, Object value) {
             dynamicTemplateData.put(key, value);
         }
-    }
+    }*/
     private void sendMail() throws Exception{
         Email from = new Email("ivan@ui2.co.jp");
         from.setName("Ivan");
