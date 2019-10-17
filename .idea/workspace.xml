@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3370df54-a5c4-45f4-838c-61a751060821" name="Default Changelist" comment="" />
+    <list default="true" id="3370df54-a5c4-45f4-838c-61a751060821" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/jp/co/u_idea2/batch/jbba01001/JBBA01001Tasklet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jp/co/u_idea2/batch/jbba01001/JBBA01001Tasklet.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571279081216</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Change Structure">
+      <created>1571279401839</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1571279401839</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

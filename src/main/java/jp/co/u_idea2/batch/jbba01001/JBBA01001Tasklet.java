@@ -209,7 +209,9 @@ public class JBBA01001Tasklet implements Tasklet {
         mail.setFrom(from);
         mail.setReplyTo(from);
         mail.setTemplateId("d-1dea9b705b854c9786cfafbbbdba835c");
-        DynamicTemplatePersonalization personalization = new DynamicTemplatePersonalization();
+        Personalization personalization = new Personalization();
+
+        personalization.addSubstitution("%customername%", "Example User");
         personalization.addTo(to);
         personalization.addDynamicTemplateData("customername", "User1");
         personalization.addDynamicTemplateData("-customername-", "User2");
