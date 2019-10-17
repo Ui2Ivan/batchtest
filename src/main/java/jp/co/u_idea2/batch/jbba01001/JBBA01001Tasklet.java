@@ -120,8 +120,8 @@ public class JBBA01001Tasklet implements Tasklet {
 //            return RepeatStatus.FINISHED;
 //        }
 
-//        sendMailTemplate();
-        setVersion();
+        sendMailTemplate();
+//        setVersion();
 //        Email from = new Email("ivan@ui2.co.jp");
 //        from.setName("Ivan");
 //        String subject = "Hello World from the SendGrid Java Library!";
@@ -210,9 +210,11 @@ public class JBBA01001Tasklet implements Tasklet {
         mail.setSubject(" ");
         mail.setFrom(from);
         mail.setReplyTo(from);
-        mail.setTemplateId("d-41698dc549a54b7b9f9867ece5c85685");
+//        mail.setTemplateId("d-41698dc549a54b7b9f9867ece5c85685");
+        mail.setTemplateId("33346b44-682e-461a-b615-999de8871b74");
         Personalization personalization = new Personalization();
-        personalization.addDynamicTemplateData("customername", "User1");
+//        personalization.addDynamicTemplateData("customername", "User1");
+        personalization.addSubstitution("subject", "User1");
         personalization.addTo(to);
         mail.addPersonalization(personalization);
         SendGrid sg = new SendGrid(System.getenv("SENDGRID_API_KEY"));
