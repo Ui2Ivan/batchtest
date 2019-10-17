@@ -2,12 +2,164 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3370df54-a5c4-45f4-838c-61a751060821" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jp/co/u_idea2/batch/jbba01001/JBBA01001Tasklet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jp/co/u_idea2/batch/jbba01001/JBBA01001Tasklet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jp/co/u_idea2/batch/jbba01001/JBBA01001Tasklet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jp/co/u_idea2/batch/jbba01001/JBBA01001Tasklet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE-distribution.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE-distribution.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/gson-2.8.6.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/inputFile/FlightUpdate.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/aether-api-1.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/aether-impl-1.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/aether-spi-1.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/aether-util-0.9.0.M2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/aether-util-1.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/antlr-2.7.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/asm-5.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/classmate-1.3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/classworlds-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/com.ibm.jbatch-tck-spi-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/commons-beanutils-1.9.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/commons-chain-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/commons-codec-1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/commons-collections-3.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/commons-compress-1.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/commons-dbcp2-2.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/commons-digester-2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/commons-io-2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/commons-lang-2.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/commons-lang3-3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/commons-pool2-2.4.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/commons-validator-1.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/dom4j-1.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/doxia-core-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/doxia-decoration-model-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/doxia-logging-api-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/doxia-module-fml-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/doxia-module-xhtml-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/doxia-sink-api-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/doxia-site-renderer-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/dozer-5.5.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/dozer-spring-5.5.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/file-management-1.2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/h2-1.4.196.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/hamcrest-core-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/hibernate-validator-5.3.5.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/httpclient-4.5.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/httpcore-4.4.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/jackson-annotations-2.8.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/jackson-core-2.8.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/jackson-databind-2.8.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/java-http-client-4.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/javax.batch-api-1.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/javax.el-3.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/javax.inject-1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/jboss-logging-3.3.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/jcl-over-slf4j-1.7.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/jettison-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/joda-time-2.9.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/junit-4.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/logback-classic-1.1.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/logback-core-1.1.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/maven-aether-provider-3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/maven-artifact-3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/maven-artifact-transfer-0.9.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/maven-common-artifact-filters-3.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/maven-core-3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/maven-dependency-analyzer-1.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/maven-dependency-plugin-3.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/maven-dependency-tree-3.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/maven-model-3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/maven-model-builder-3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/maven-plugin-api-3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/maven-reporting-api-3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/maven-reporting-impl-2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/maven-repository-metadata-3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/maven-settings-3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/maven-settings-builder-3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/maven-shared-io-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/maven-shared-utils-3.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/mockito-core-1.10.19.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/mybatis-3.4.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/mybatis-spring-1.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/mybatis-typehandlers-jsr310-1.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/mysql-connector-java-8.0.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/objenesis-2.5.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/oro-2.0.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/plexus-archiver-3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/plexus-cipher-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/plexus-classworlds-2.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/plexus-component-annotations-1.5.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/plexus-container-default-1.0-alpha-30.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/plexus-i18n-1.0-beta-7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/plexus-interpolation-1.14.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/plexus-io-2.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/plexus-sec-dispatcher-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/plexus-utils-3.0.24.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/plexus-velocity-1.1.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/postgresql-9.4.1212.jre7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/protobuf-java-2.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/sendgrid-java-4.4.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/sisu-guice-2.1.7-noaop.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/sisu-inject-bean-1.4.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/sisu-inject-plexus-1.4.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/slf4j-api-1.7.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/snappy-0.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/spring-aop-4.3.14.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/spring-batch-core-3.0.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/spring-batch-infrastructure-3.0.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/spring-beans-4.3.14.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/spring-context-4.3.14.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/spring-core-4.3.14.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/spring-expression-4.3.14.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/spring-jdbc-4.3.14.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/spring-retry-1.2.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/spring-tx-4.3.14.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/sslext-1.2-0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/struts-core-1.3.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/struts-taglib-1.3.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/struts-tiles-1.3.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/u_idea2-batch-2.0.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/validation-api-1.1.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/velocity-1.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/velocity-tools-2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/wagon-provider-api-1.0-alpha-6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/xercesImpl-2.9.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/xml-apis-1.4.01.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/xmlpull-1.1.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/xpp3_min-1.1.4c.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/xstream-1.4.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/lib/xz-1.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/scripts/JBBA01001.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/scripts/JBBA01001.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/scripts/JBBA02001.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/scripts/JBBA02001.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/scripts/aggregateReservation.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/scripts/aggregateReservation.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/scripts/env/classpath.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/scripts/env/classpath.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/scripts/env/setAsyncBatchEnv.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/scripts/env/setAsyncBatchEnv.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/scripts/startAsyncBatchDaemon.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/scripts/startAsyncBatchDaemon.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/scripts/stopAsyncBatchDaemon.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/scripts/stopAsyncBatchDaemon.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/sql/mysql/00000_drop_all_tables.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/sql/mysql/00100_create_all_tables.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/sql/mysql/00200_insert_fixed_value.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/sql/mysql/00210_insert_route.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/sql/mysql/00220_insert_flight_master.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/sql/mysql/00230_insert_member.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/sql/mysql/insert_job_data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/sql/postgres/00000_drop_all_tables.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/sql/postgres/00100_create_all_tables.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/sql/postgres/00200_insert_fixed_value.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/sql/postgres/00210_insert_route.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/sql/postgres/00220_insert_flight_master.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/sql/postgres/00230_insert_member.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/sql/postgres/00240_insert_peak_time.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/sql/postgres/00250_insert_flight.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/sql/postgres/00260_insert_reservation.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/sql/postgres/insert_job_data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/sql/tmp/00240_insert_peak_time.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/sql/tmp/00250_insert_flight.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/u_idea2-batch-2.0.1.RELEASE/sql/tmp/00260_insert_reservation.sql" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -286,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571281221356</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Change Structure">
+      <created>1571281693591</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1571281693591</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
