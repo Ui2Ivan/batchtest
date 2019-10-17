@@ -120,7 +120,8 @@ public class JBBA01001Tasklet implements Tasklet {
 //            return RepeatStatus.FINISHED;
 //        }
 
-        sendMailTemplate();
+//        sendMailTemplate();
+        setTemplate();
 //        Email from = new Email("ivan@ui2.co.jp");
 //        from.setName("Ivan");
 //        String subject = "Hello World from the SendGrid Java Library!";
@@ -211,12 +212,7 @@ public class JBBA01001Tasklet implements Tasklet {
         mail.setReplyTo(from);
         mail.setTemplateId("d-41698dc549a54b7b9f9867ece5c85685");
         Personalization personalization = new Personalization();
-        final JsonObject json = new com.google.gson.JsonObject();
-        json.addProperty("name", "User1");
-        personalization.addCustomArg("dynamic_template_data", json.toString());
         personalization.addDynamicTemplateData("customername", "User1");
-        personalization.addDynamicTemplateData("-customername-", "User2");
-        personalization.addDynamicTemplateData(":customername", "User3");
         personalization.addTo(to);
         mail.addPersonalization(personalization);
         SendGrid sg = new SendGrid(System.getenv("SENDGRID_API_KEY"));
@@ -225,6 +221,22 @@ public class JBBA01001Tasklet implements Tasklet {
             request.setMethod(Method.POST);
             request.setEndpoint("mail/send");
             request.setBody(mail.build());
+            Response response = sg.api(request);
+            System.out.println(response.getStatusCode());
+            System.out.println(response.getBody());
+            System.out.println(response.getHeaders());
+        } catch (IOException ex) {
+            throw ex;
+        }
+    }
+
+    public void setTemplate() throws Exception{
+        try {
+            SendGrid sg = new SendGrid(System.getenv("SENDGRID_API_KEY"));
+            Request request = new Request();
+            request.setMethod(Method.POST);
+            request.setEndpoint("templates");
+            request.setBody("{\"name\":\"example_name\"}");
             Response response = sg.api(request);
             System.out.println(response.getStatusCode());
             System.out.println(response.getBody());
