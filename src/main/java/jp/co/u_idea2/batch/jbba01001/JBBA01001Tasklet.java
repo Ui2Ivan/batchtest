@@ -4,9 +4,14 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.HashMap;
+import java.util.Map;
 
 import javax.inject.Inject;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.PropertyNamingStrategy;
+import com.fasterxml.jackson.databind.annotation.JsonNaming;
 import com.sendgrid.SendGrid;
 import jp.co.u_idea2.batch.common.exception.U_idea2BatchException;
 import jp.co.u_idea2.batch.common.logging.LogMessages;
@@ -204,11 +209,11 @@ public class JBBA01001Tasklet implements Tasklet {
         mail.setFrom(from);
         mail.setReplyTo(from);
         mail.setTemplateId("d-1dea9b705b854c9786cfafbbbdba835c");
-        Personalization personalization = new Personalization();
+        DynamicTemplatePersonalization personalization = new DynamicTemplatePersonalization();
         personalization.addCc(cc);
         personalization.addTo(to);
         personalization.addBcc(bcc);
-        personalization.addSubstitution("%customername%", "User1");
+        personalization.addDynamicTemplateData("%customername%", "User1");
         mail.addPersonalization(personalization);
         SendGrid sg = new SendGrid(System.getenv("SENDGRID_API_KEY"));
         Request request = new Request();
@@ -225,6 +230,17 @@ public class JBBA01001Tasklet implements Tasklet {
         }
     }
 
+
+    @JsonNaming(PropertyNamingStrategy.SnakeCaseStrategy.class)
+    public static class DynamicTemplatePersonalization extends Personalization {
+
+        @JsonProperty
+        private Map<String, Object> dynamicTemplateData = new HashMap<>();
+
+        public void addDynamicTemplateData(String key, Object value) {
+            dynamicTemplateData.put(key, value);
+        }
+    }
     private void sendMail() throws Exception{
         Email from = new Email("ivan@ui2.co.jp");
         from.setName("Ivan");
