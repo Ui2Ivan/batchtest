@@ -121,7 +121,7 @@ public class JBBA01001Tasklet implements Tasklet {
 //        }
 
 //        sendMailTemplate();
-        setTemplate();
+        setVersion();
 //        Email from = new Email("ivan@ui2.co.jp");
 //        from.setName("Ivan");
 //        String subject = "Hello World from the SendGrid Java Library!";
@@ -237,6 +237,22 @@ public class JBBA01001Tasklet implements Tasklet {
             request.setMethod(Method.POST);
             request.setEndpoint("templates");
             request.setBody("{\"name\":\"example_name\"}");
+            Response response = sg.api(request);
+            System.out.println(response.getStatusCode());
+            System.out.println(response.getBody());
+            System.out.println(response.getHeaders());
+        } catch (IOException ex) {
+            throw ex;
+        }
+    }
+
+    public void setVersion() throws Exception{
+        try {
+            SendGrid sg = new SendGrid(System.getenv("SENDGRID_API_KEY"));
+            Request request = new Request();
+            request.setMethod(Method.POST);
+            request.setEndpoint("templates/{template_id}/versions");
+            request.setBody("{\"name\":\"example_version_name\",\"html_content\":\"Hello <%body%>\",\"plain_content\":\"Hello <%body%>\",\"active\":1,\"template_id\":\"ddb96bbc-9b92-425e-8979-99464621b543\",\"subject\":\"Hello <%subject%>\"}");
             Response response = sg.api(request);
             System.out.println(response.getStatusCode());
             System.out.println(response.getBody());
