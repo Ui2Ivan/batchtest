@@ -12,6 +12,7 @@ import javax.inject.Inject;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.PropertyNamingStrategy;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
+import com.google.gson.JsonObject;
 import com.sendgrid.SendGrid;
 import jp.co.u_idea2.batch.common.exception.U_idea2BatchException;
 import jp.co.u_idea2.batch.common.logging.LogMessages;
@@ -210,7 +211,9 @@ public class JBBA01001Tasklet implements Tasklet {
         mail.setReplyTo(from);
         mail.setTemplateId("d-1dea9b705b854c9786cfafbbbdba835c");
         Personalization personalization = new Personalization();
-
+        final JsonObject json = new com.google.gson.JsonObject();
+        json.addProperty("customername", "contact@aimmoth.com");
+        personalization.addCustomArg("dynamic_template_data", json.toString());
         personalization.addDynamicTemplateData("customername", "User1");
         personalization.addDynamicTemplateData("-customername-", "User2");
         personalization.addDynamicTemplateData(":customername", "User3");
