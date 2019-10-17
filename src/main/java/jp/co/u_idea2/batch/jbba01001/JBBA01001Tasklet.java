@@ -212,7 +212,7 @@ public class JBBA01001Tasklet implements Tasklet {
         mail.setTemplateId("d-1dea9b705b854c9786cfafbbbdba835c");
         Personalization personalization = new Personalization();
         final JsonObject json = new com.google.gson.JsonObject();
-        json.addProperty("-salesContact-", "contact@aimmoth.com");
+        json.addProperty("-customername-", "contact@aimmoth.com");
         personalization.addCustomArg("dynamic_template_data", json.toString());
         personalization.addDynamicTemplateData("customername", "User1");
         personalization.addDynamicTemplateData("-customername-", "User2");
