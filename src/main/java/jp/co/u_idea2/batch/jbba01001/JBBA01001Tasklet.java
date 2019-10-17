@@ -234,7 +234,7 @@ public class JBBA01001Tasklet implements Tasklet {
     @JsonNaming(PropertyNamingStrategy.SnakeCaseStrategy.class)
     public static class DynamicTemplatePersonalization extends Personalization {
 
-        @JsonProperty
+        @JsonProperty("dynamic_template_data")
         private Map<String, Object> dynamicTemplateData = new HashMap<>();
 
         public void addDynamicTemplateData(String key, Object value) {
