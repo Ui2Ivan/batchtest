@@ -47,7 +47,7 @@
         <dozer.version>5.5.1</dozer.version>
         <org.codehaus.mojo.sql-maven-plugin.version>1.5</org.codehaus.mojo.sql-maven-plugin.version>
         <postgresql.version>9.4.1212.jre7</postgresql.version>
-        <mysql.version>8.0.16</mysql.version>
+        <mysql.version>8.0.28</mysql.version>
     </properties>
 
     <dependencyManagement>
